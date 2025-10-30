@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Personal Assistance | Benin Republic</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .lang-buttons {
+      text-align: center;
+      margin: 10px;
+    }
+    button {
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    section {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #111;
+      border-bottom: 2px solid #222;
+      padding-bottom: 5px;
+    }
+    .prices {
+      background: #f8f8f8;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      font-size: 14px;
+    }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      width: 220px;
+      border-radius: 15px;
+      display: block;
+      margin: 15px auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .whatsapp-btn {
+      display: block;
+      text-align: center;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin: 10px auto;
+      width: fit-content;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1da851;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      transition: background-color 0.3s;
+    }
+    .floating-whatsapp:hover {
+      background-color: #1da851;
+    }
+    .testimonial-box {
+      background: #fff;
+      border-left: 4px solid #25d366;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: opacity 0.8s ease;
+      font-style: italic;
+      margin-top: 15px;
+      min-height: 120px;
+    }
+    .fade-out {
+      opacity: 0;
+    }
+    .fade-in {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elite Personal Assistance</h1>
+    <p>Making Life Easy for Foreign Residents in Benin Republic</p>
+  </header>
+
+  <div class="lang-buttons">
+    <button onclick="showEnglish()">English</button>
+    <button onclick="showFrench()">Français</button>
+  </div>
+
+  <!-- English Section -->
+  <div id="english">
+    <section>
+      <h2>Home</h2>
+      <img src="ka.jpg" alt="Personal Assistant in Benin Republic" />
+      <a href="https://wa.me/22954628184" target="_blank" class="whatsapp-btn">💬 Book Now on WhatsApp</a>
+      <p>
+        Welcome to <strong>Elite Personal Assistance</strong> — your trusted
+        lifestyle partner in Benin Republic. We provide trained and reliable
+        local assistants who help foreigners manage daily life with ease,
+        comfort, and privacy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <ul>
+        <li>🛍 Errand & Shopping Assistance</li>
+        <li>🍳 Cooking & Home Support</li>
+        <li>🗣 Language & Communication Help</li>
+        <li>🚗 City Companion Service</li>
+        <li>📅 Lifestyle Management</li>
+      </ul>
+      <div class="prices">
+        <h3>Pricing</h3>
+        <p>3 hours — <strong>₦10,000</strong></p>
+        <p>5 hours — <strong>₦15,000</strong></p>
+        <p>10 hours — <strong>₦20,000</strong></p>
+        <p>Full Day — <strong>₦30,000</strong></p>
+      </div>
+    </section>
+
+    <section id="testimonials-en">
+      <h2>Testimonials</h2>
+      <div class="testimonial-box fade-in">
+        <p id="testimonial-text-en">“Elite Personal Assistance made my stay in Cotonou so smooth! I didn’t have to worry about errands or language barriers.”</p>
+        <p id="testimonial-author-en"><strong>— Ololade (NIGERIA)</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>About Us</h2>
+      <img src="yin.jpg" alt="Elite Personal Assistant" />
+      <a href="https://wa.me/22954628184" target="_blank" class="whatsapp-btn">💬 Book Now on WhatsApp</a>
+      <p>
+        We help foreigners who are in Benin Republic for vacation to enjoy a
+        comfortable, stress-free life. Our assistants are trained to support you
+        with errands, cooking, translation, and companionship — always with
+        respect and professionalism.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>📍 Location: Cotonou, Benin Republic</p>
+      <p>📱 Call <a href="tel:+2290143723388">+2290143723388</a> / WhatsApp:
+        <a href="https://wa.me/22954628184" target="_blank">+22954628184</a>
+      </p>
+      <p>📧 Email: <a href="mailto:Oloricosmos1998@gmail.com">Oloricosmos1998@gmail.com</a></p>
+      <p>🕒 Hours: Monday – Saturday, 10:00 AM – 5:00 PM</p>
+      <p>
+        <strong>Follow Us:</strong><br />
+        <a href="https://www.instagram.com/__olayimika__/" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@__olayinka1__" target="_blank">TikTok</a> |
+        <a href="snapchat.com/t/jOmHHS9V/olayinka252999" target="_blank">Snapchat</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- French Section -->
+  <div id="french" style="display: none;">
+    <section>
+      <h2>Accueil</h2>
+      <img src="yin.jpg" alt="Assistante personnelle au Bénin" />
+      <a href="https://wa.me/22954628184" target="_blank" class="whatsapp-btn">💬 Réservez sur WhatsApp</a>
+      <p>
+        Bienvenue chez <strong>Elite Personal Assistance</strong> — votre
+        partenaire de confiance pour la vie quotidienne au Bénin. Nous
+        fournissons des assistantes locales formées et fiables pour aider les
+        étrangers à vivre en toute tranquillité et confort.
+      </p>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <ul>
+        <li>🛍 Assistance pour les courses et les achats</li>
+        <li>🍳 Aide à la cuisine et au ménage</li>
+        <li>🗣 Aide linguistique et à la communication</li>
+        <li>🚗 Service d’accompagnement en ville</li>
+        <li>📅 Gestion du style de vie</li>
+      </ul>
+      <div class="prices">
+        <h3>Tarifs</h3>
+        <p>3 heures — <strong>10 000 FCFA</strong></p>
+        <p>5 heures — <strong>15 000 FCFA</strong></p>
+        <p>10 heures — <strong>20 000 FCFA</strong></p>
+        <p>Journée complète — <strong>30 000 FCFA</strong></p>
+      </div>
+    </section>
+
+    <section id="testimonials-fr">
+      <h2>Témoignages</h2>
+      <div class="testimonial-box fade-in">
+        <p id="testimonial-text-fr">“Elite Personal Assistance a rendu mon séjour à Cotonou tellement agréable ! Je n’ai eu à me soucier de rien.”</p>
+        <p id="testimonial-author-fr"><strong>— Ololade (Nigeria)</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>À propos</h2>
+      <img src="ka.jpg" alt="Assistante personnelle professionnelle" />
+      <a href="https://wa.me/22954628184" target="_blank" class="whatsapp-btn">💬 Réservez sur WhatsApp</a>
+      <p>
+        J’aide les étrangers déjà installés au Bénin à vivre une vie confortable
+        et sans stress. Mes assistantes sont formées pour vous accompagner dans
+        vos courses, la cuisine, la traduction et la compagnie — toujours avec
+        respect et professionnalisme.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>📍 Adresse : Cotonou, République du Bénin</p>
+      <p>📱 Téléphone : <a href="tel:+2290143723388">+2290143723388</a> /
+        WhatsApp :
+        <a href="https://wa.me/22954628184" target="_blank">+22954628184</a>
+      </p>
+      <p>📧 Email :
+        <a href="mailto:Oloricosmos1998@gmail.com">Oloricosmos1998@gmail.com</a>
+      </p>
+      <p>🕒 Horaires : Lundi – Samedi, 10h00 – 17h00</p>
+      <p>
+        <strong>Suivez-moi :</strong><br />
+        <a href="https://www.instagram.com/__olayimika__/" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@__olayinka1__" target="_blank">TikTok</a> |
+        <a href="snapchat.com/t/jOmHHS9V/olayinka252999" target="_blank">Snapchat</a>
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Elite Personal Assistance | All Rights Reserved | Thank you for choosing us
+  </footer>
+
+  <a href="https://wa.me/22954628184" target="_blank" class="floating-whatsapp">💬</a>
+
+  <script>
+    function showEnglish() {
+      document.getElementById("english").style.display = "block";
+      document.getElementById("french").style.display = "none";
+    }
+    function showFrench() {
+      document.getElementById("english").style.display = "none";
+      document.getElementById("french").style.display = "block";
+    }
+
+    const testimonialsEn = [
+      { text: "Elite Personal Assistance made my stay in Cotonou so smooth! I didn’t have to worry about errands or language barriers.", author: "— Ololade (NIGERIA)" },
+      { text: "Very professional and respectful service. My assistant was always on time and helpful with everything.", author: "— Khadijat (CAMERON)" },
+      { text: "A lifesaver! From shopping to translation, everything was handled perfectly. Highly recommended.", author: "— Olajuwon (GHANA)" }
+    ];
+    const testimonialsFr = [
+      { text: "Elite Personal Assistance a rendu mon séjour à Cotonou tellement agréable ! Je n’ai eu à me soucier de rien.", author: "— Olalade (NIGERIA)" },
+      { text: "Service très professionnel et respectueux. Mon assistante était toujours ponctuelle et serviable.", author: "—   Khadijat (CAMERON)" },
+      { text: "Une vraie aide ! Des courses à la traduction, tout a été géré à la perfection. Je recommande vivement.", author: "— Olajuwon (GHANA)" }
+    ];
+
+    let indexEn = 0, indexFr = 0;
+    function rotateTestimonials() {
+      const textEn = document.getElementById("testimonial-text-en");
+      const authorEn = document.getElementById("testimonial-author-en");
+      const boxEn = textEn.closest(".testimonial-box");
+
+      const textFr = document.getElementById("testimonial-text-fr");
+      const authorFr = document.getElementById("testimonial-author-fr");
+      const boxFr = textFr.closest(".testimonial-box");
+
+      boxEn.classList.remove("fade-in");
+      boxEn.classList.add("fade-out");
+      boxFr.classList.remove("fade-in");
+      boxFr.classList.add("fade-out");
+
+      setTimeout(() => {
+        indexEn = (indexEn + 1) % testimonialsEn.length;
+        indexFr = (indexFr + 1) % testimonialsFr.length;
+        textEn.textContent = testimonialsEn[indexEn].text;
+        authorEn.textContent = testimonialsEn[indexEn].author;
+        textFr.textContent = testimonialsFr[indexFr].text;
+        authorFr.textContent = testimonialsFr[indexFr].author;
+        boxEn.classList.remove("fade-out");
+        boxEn.classList.add("fade-in");
+        boxFr.classList.remove("fade-out");
+        boxFr.classList.add("fade-in");
+      }, 600);
+    }
+    setInterval(rotateTestimonials, 5000);
+  </script>
+</body>
+</html>
